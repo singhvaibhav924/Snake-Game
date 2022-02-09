@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link href = "style.css" rel = "stylesheet">
+</head>
+<body>
+    <h1 class="heading">Snake Game</h1>
+    <a href="about.html" target="_blank">About Me</a>
+    <div class="container">
+        <div class="board">
+            
+        </div>
+        <div class="buttons">
+            <img src="images/arrow.png" onclick="onUpPress()" alt="Arrow Up" class = "up">
+            <img src="images/arrow.png" onclick="onLeftPress()" alt="Arrow Left" class = "left">
+            <img src="images/arrow.png" onclick="onRightPress()" alt="Arrow Right" class = "right">
+            <img src="images/arrow.png" onclick="onDownPress()" alt="Arrow Down" class = "down">
+        
+        </div>
+        <p class="score">Score : 0</p>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>

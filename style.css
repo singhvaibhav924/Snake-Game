@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Supermercado+One&family=Titillium+Web&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:crimson;
+}
+a {
+    position: absolute;
+    display: flex;
+    background-color: purple;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0px 6px;
+    border-radius: 20px;
+    right: 0px;
+    top: 0px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+
+}
+h1 {
+    position: relative;
+    width: 100vw;
+    color: whitesmoke;
+    text-align: center;
+    height: 10vh;
+    font-size: 8vh;
+    bottom: 1vh;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.container {
+    position: relative;
+    
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board {
+    position: relative;
+    display: block;
+    width: 80vmin;
+    height: 80vmin;
+    border: 10px solid purple;
+    background-color: black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+}
+.head {
+    position: relative;
+    background-color: red;
+    width: 4vmin;
+    height: 4vmin;
+    border-radius: 2vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 4vmin;
+}
+.tail {
+    position: relative;
+    width: 3vmin;
+    height: 3vmin;
+    top: 0.5vmin;
+    left: 0.5vmin;
+    background-color: yellow;
+    border-radius: 1.5vmin;
+}
+.food {
+    position: relative;
+    width: 3vmin;
+    height: 3vmin;
+    top: 0.5vmin;
+    left: 0.5vmin;
+    background-color:darkorchid;
+    border-radius: 0.5vmin;
+}
+.buttons {
+    position: absolute;
+    bottom: 3vh;
+    align-items: center;
+    height: 12vh;
+    width : 12vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 4vh;
+    
+}
+.up {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+}
+.left {
+    position: relative;
+    transform: rotate(270deg);
+    justify-self: right;
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+}
+.right {
+    position: relative;
+    transform: rotate(90deg);
+    justify-self: left;
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+}
+.down {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    transform: rotate(180deg);
+    justify-self: center;
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+}
+@media only screen and (min-width: 1000px) {
+    .buttons {
+        display: none;
+    }
+}
+
+.score {
+    position: absolute;
+    bottom: 3vh;
+    right: 3vh;
+    font-size: 4vh;
+    color: white;
+}
